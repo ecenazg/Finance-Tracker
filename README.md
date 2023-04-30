@@ -43,15 +43,6 @@
 - /deleteincome/<id>: Endpoint for deleting an income transaction with the given id.
 - /deleteexpense/<id>: Endpoint for deleting an expense transaction with the given id.
 
-#### Getting Started
-- Clone this repository
-- Create a virtual environment: python3 -m venv venv
-- Activate the virtual environment: source - venv/bin/activate
-- Install the dependencies: pip install -r requirements.txt
-- Create a database named finance.db: touch finance.db
-- Run the Flask application: flask run
-
-  
 #### Dependencies
 - cachelib==0.1.1
 - certifi==2020.11.8
