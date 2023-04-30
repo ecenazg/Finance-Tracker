@@ -91,8 +91,7 @@
 2. Install Docker and Docker Compose if you haven't already.
 3. Open a terminal or command prompt and navigate to the root directory of the cloned repository.
 4. Run the command docker-compose up.
-5. The app should now be running at http://localhost:3000
+5. The app should now be running at http://localhost:5000
 
-#### Credits
-This project was built as part of the CS50 Web Programming with Python and JavaScript course on edX.  
+
 
