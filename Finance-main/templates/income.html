@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Income
+{% endblock %}
+
+{% block main %}
+<div class="container-fluid px-5 py-4" style="background-color: #F7F7F7">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center display-4 mb-4" style="color: #0057A6; font-weight: bold;">Income</h1>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <form method="post">
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="number" step="0.01" min="0" class="form-control" id="amount" name="amount" required>
+                </div>
+                <div class="form-group">
+                    <label for="currency">Currency</label>
+                    <select class="form-control" id="currency" name="currency" required>
+                      {% for currency in currencies %}
+                        <option>{{ currency }}</option>
+                      {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="income_type">Income Type</label>
+                    <select class="form-control" id="income_type" name="income_type">
+                        {% for income_type in income_types %}
+                            <option>{{ income_type }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <hr>
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th style="color: #0057A6;">Amount</th>
+                    <th style="color: #0057A6;">Currency</th>
+                    <th style="color: #0057A6;">Income Type</th>
+                    <th style="color: #0057A6;">Date</th>
+                    <th style="color: #0057A6;">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for income in incomeList %}
+                    <tr>
+                        <td>{{ income.amount }}</td>
+                        <td>{{ income.currency }}</td>
+                        <td>{{ income.income_type }}</td>
+                        <td>{{ income.date }}</td>
+                        <td>  <button onclick="handleRemove({{income.id}})">Delete</button> </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+  function handleRemove(id){
+    fetch("/deleteincome/"+id, {
+      method: "DELETE",
+      header: {
+        'Accept' : 'application/json',
+        'Content-Type' : 'application/json',
+      }
+    })
+    setTimeout(function(){
+      window.location.reload();
+    }, 2000);
+  }
+</script>
+{% endblock %}
+

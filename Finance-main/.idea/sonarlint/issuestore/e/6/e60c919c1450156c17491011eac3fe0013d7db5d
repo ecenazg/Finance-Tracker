@@ -1,0 +1,14 @@
+
+fpython:S1192-"GDefine a constant instead of duplicating this literal "/login" 5 times.(§Ý°8‏םרתü0
+zpython:S1171"\Rename this local variable "historyList" to match the regular expression ^[_a-z][a-z0-9_]*$.(Êƒß₪8‏םרתü0
+python:S117/"\Rename this local variable "totalAmount" to match the regular expression ^[_a-z][a-z0-9_]*$.(«°א©תÿÿÿÿ8‏םרתü0
+~python:S117d"[Rename this local variable "incomeList" to match the regular expression ^[_a-z][a-z0-9_]*$.(ד˜קשÿÿÿÿ8‏םרתü0
+€python:S117 "\Rename this local variable "expenseList" to match the regular expression ^[_a-z][a-z0-9_]*$.(»הֿ„ÿÿÿÿÿ8‏םרתü0
+{python:S117÷"\Rename this local variable "totalAmount" to match the regular expression ^[_a-z][a-z0-9_]*$.(‹׃³‘8‏םרתü0
+„python:S117¿"`Rename this local variable "convertedAmount" to match the regular expression ^[_a-z][a-z0-9_]*$.(ûÝץװüÿÿÿÿ8‏םרתü0
+€python:S117ְ"\Rename this local variable "totalAmount" to match the regular expression ^[_a-z][a-z0-9_]*$.(«°א©תÿÿÿÿ8‏םרתü0
+„python:S117ֶ"`Rename this local variable "convertedAmount" to match the regular expression ^[_a-z][a-z0-9_]*$.(ûÝץװüÿÿÿÿ8‏םרתü0
+€python:S117ַ"\Rename this local variable "totalAmount" to match the regular expression ^[_a-z][a-z0-9_]*$.(«°א©תÿÿÿÿ8‏םרתü0
+Opython:S5869ÿ"*Remove duplicates in this character class.(Ýצ‘»ÿÿÿÿÿ8‏םרתü0
+Opython:S5869ÿ"*Remove duplicates in this character class.(Ýצ‘»ÿÿÿÿÿ8ÿםרתü0
+Wpython:S1481¶"2Remove the unused local variable "initial_amount".(ר¹ˆׂÿÿÿÿÿ8ÿםרתü0

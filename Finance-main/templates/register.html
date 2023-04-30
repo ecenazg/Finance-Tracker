@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h4>Register</h4>
+                </div>
+                <div class="card-body">
+                    <form action="/register" method="post">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Enter username" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input class="form-control" name="password" placeholder="Enter password" type="password">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordConfirm">Confirm Password</label>
+                            <input class="form-control" name="passwordConfirm" placeholder="Re-enter password" type="password">
+                        </div>
+                        <div class="pw-regex">
+                            <ul>
+                                <h6>Password Requirements</h6>
+                                <li id="pw-num">At least one number.</li>
+                                <li id="pw-case">At least one uppercase and one lowercase character.</li>
+                                <li id="pw-symbol">At least one special symbol. (@$!%*#?&-_)</li>
+                                <li id="pw-len">Between 6 to 20 characters long.</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-primary btn-block mt-4" type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
