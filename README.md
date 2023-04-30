@@ -26,14 +26,6 @@
 2. Creating a separate table for currency exchange rates with an update feature.
 3. Turning expense type and income type into tables with add/edit/delete functionality.
 
-#### Getting Started
-- Clone this repository
-- Create a virtual environment: python3 -m venv venv
-- Activate the virtual environment: source - venv/bin/activate
-- Install the dependencies: pip install -r requirements.txt
-- Create a database named finance.db: touch finance.db
-- Run the Flask application: flask run
-
 #### Files
 - finance.db: SQLite database file.
 - helpers.py: Python script containing helper functions.
@@ -50,6 +42,15 @@
 - /expense: Expense page, allowing the user to add and view expense transactions.
 - /deleteincome/<id>: Endpoint for deleting an income transaction with the given id.
 - /deleteexpense/<id>: Endpoint for deleting an expense transaction with the given id.
+
+#### Getting Started
+- Clone this repository
+- Create a virtual environment: python3 -m venv venv
+- Activate the virtual environment: source - venv/bin/activate
+- Install the dependencies: pip install -r requirements.txt
+- Create a database named finance.db: touch finance.db
+- Run the Flask application: flask run
+
   
 #### Dependencies
 - cachelib==0.1.1
